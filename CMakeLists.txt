@@ -5,7 +5,7 @@ project(lua VERSION 5.4.4 LANGUAGES C)
 option(LUA_BUILD_COMPILER "Build the Lua compiler" ON)
 option(LUA_BUILD_INTERPRETER "Build the Lua interpreter" ON)
 
-add_library(lua STATIC
+add_library(lua
   lapi.h lauxlib.h lcode.h lctype.h ldebug.h ldo.h lfunc.h lgc.h ljumptab.h
   llex.h llimits.h lmem.h  lobject.h lopcodes.h lopnames.h lparser.h lprefix.h
   lstate.h lstring.h ltable.h ltm.h lua.h lua.hpp luaconf.h lualib.h lundump.h
